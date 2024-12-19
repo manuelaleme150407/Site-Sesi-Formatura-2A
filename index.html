@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="src/favIcon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+  <script src="scripts/script.js" defer></script>
+  <script src="scripts/modal.js" defer></script>
+  <title>Pagina inicial</title>
+</head>
+
+<body>
+  <!-- FIXED LOGO -->
+  <div class="fixaCanto">
+    <div class="logo">
+      <img src="./src/logoDev.png" alt="" />
+      <p>Dev Team</p>
+      <span class="copyright-symbol">®</span>
+    </div>
+  </div>
+  <!-- FIXED LOGO END -->
+
+  <!-- FIXED ICONS -->
+  <div class="icons">
+    <div class="space-icons">
+      <a href="#bg-home" class="scroll-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock"
+          viewBox="0 0 16 16">
+          <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+        </svg>
+      </a>
+    </div>
+    <div class="space-icons">
+      <a href="#timeLine" class="scroll-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar"
+          viewBox="0 0 16 16">
+          <path
+            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+        </svg>
+      </a>
+    </div>
+    <div class="space-icons">
+      <a href="#anuario" class="scroll-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera"
+          viewBox="0 0 16 16">
+          <path
+            d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z" />
+          <path
+            d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
+        </svg>
+      </a>
+    </div>
+    <div class="space-icons">  
+      <a href="#location" class="scroll-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill"
+          viewBox="0 0 16 16">
+          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+        </svg>
+      </a>
+    </div>
+    <div class="space-icons" id="btnMusic">
+      <a href="" class="scroll-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-list"
+          viewBox="0 0 16 16">
+          <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2" />
+          <path fill-rule="evenodd" d="M12 3v10h-1V3z" />
+          <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1z" />
+          <path fill-rule="evenodd"
+            d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5m0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5m0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5" />
+        </svg>
+      </a>
+    </div>
+  </div>
+  <!-- FIXED ICONS END -->
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <div>
+        <img id="modal-image" src="" alt="Imagem do modal" />
+      </div>
+      <div>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL END -->
+
+  <!-- HEADER -->
+  <header id="bg-home" class="header-content">
+    <div id="logo">
+      <img src="./src/logo3A.png" alt="Logo Do Terceiro A" />
+    </div>
+    <div class="header-icons">
+      <a href="#timeLine" class="scroll-link">Linha do Tempo</a>
+      <a href="#anuario" class="scroll-link">Anuário</a>
+      <a href="#location" class="scroll-link">Localização</a>
+    </div>
+  </header>
+  <!-- HEADER END -->
+
+  <!-- MUSIC PLAYER -->
+  <div class="containerMusic">
+    <div class="playerMusic">
+      <div class="logoMusic">
+        <i class="bx bx-music"></i>
+      </div>
+
+      <span id="musicName"></span>
+
+      <audio src="" id="playerMusic"></audio>
+
+      <div class="controlsMusic">
+        <button id="prevButton"><i class="bx bx-skip-previous"></i></button>
+        <button id="playPauseButton">
+          <i class="bx bx-caret-right"></i>
+        </button>
+        <button id="nextButton"><i class="bx bx-skip-next"></i></button>
+      </div>
+
+      <div class="footerMusic">
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+
+        <div class="timeMusic">
+          <span id="currentTime">0:00</span>
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MUSIC PLAYER END -->
+
+  <!-- MAIN -->
+  <main>
+    <div class="countdown-container">
+      <h1>Contagem Regressiva para a formatura!</h1>
+      <div id="countdown">
+        <div class="time-block">
+          <span id="days">00</span>
+          <p>Dias</p>
+        </div>
+        <div class="time-block">
+          <span id="hours">00</span>
+          <p>Horas</p>
+        </div>
+        <div class="time-block">
+          <span id="minutes">00</span>
+          <p>Minutos</p>
+        </div>
+        <div class="time-block">
+          <span id="seconds">00</span>
+          <p>Segundos</p>
+        </div>
+      </div>
+      <p id="message"></p>
+    </div>
+    <div class="overlay"></div>
+  </main>
+  <!-- MAIN END -->
+
+  <!-- TIMELINE -->
+  <section class="mainLine" id="timeLine">
+    <h3 class="headingLine">TimeLine</h3>
+    <div class="containerLine">
+      <ul>
+        <li>
+          <h3 class="titleLine">Início de um Novo Ciclo 🎉</h3>
+          <p>
+            As primeiras atividades do ano e os planos para começar com o pé
+            direito.
+          </p>
+          <button data-id="1"><b>Read More ></b></button>
+          <span class="circleLine"></span>
+          <span class="dateLine">Janeiro 2025</span>
+        </li>
+
+        <li>
+          <h3 class="titleLine">Explorando Novas Ideias 💡</h3>
+          <p>Um mês cheio de criatividade e novas iniciativas para a sala.</p>
+          <button data-id="2" href=""><b>Read More ></b></button>
+          <span class="circleLine"></span>
+          <span class="dateLine">Fevereiro 2025</span>
+        </li>
+
+        <li>
+          <h3 class="titleLine">Mergulhando nos Projetos 🔧</h3>
+          <p>O foco está nos primeiros desafios e conquistas acadêmicas.</p>
+          <button data-id="3" href=""><b>Read More ></b></button>
+          <span class="circleLine"></span>
+          <span class="dateLine">Março 2025</span>
+        </li>
+
+        <li>
+          <h3 class="titleLine">Colhendo os Primeiros Resultados 🌱</h3>
+          <p>Reflexões sobre os progressos feitos e o que está por vir.</p>
+          <button data-id="4" href=""><b>Read More ></b></button>
+          <span class="circleLine"></span>
+          <span class="dateLine">Abril 2025</span>
+        </li>
+
+        <li>
+          <h3 class="titleLine">O Ritmo Acelera 🚀</h3>
+          <p>Atividades intensas e projetos marcantes para todos.</p>
+          <button data-id="5" href=""><b>Read More ></b></button>
+          <span class="circleLine"></span>
+          <span class="dateLine">Maio 2025</span>
+        </li>
+
+        <li>
+          <h3 class="titleLine">Metade do Ano, Metade da Jornada 🛤️</h3>
+          <p>Celebrando conquistas e analisando os próximos passos.</p>
+          <button data-id="6" href=""><b>Read More ></b></button>
+          <span class="circleLine"></span>
+          <span class="dateLine">Junho 2025</span>
+        </li>
+
+        <li>
+          <h3 class="titleLine">Hora de Relaxar 🏖️</h3>
+          <p>
+            Pausa estratégica para recarregar as energias e aproveitar os
+            momentos.
+          </p>
+          <button data-id="7" href=""><b>Read More ></b></button>
+          <span class="circleLine"></span>
+          <span class="dateLine">Julho 2025</span>
+        </li>
+
+        <li>
+          <h3 class="titleLine">Retorno em Grande Estilo 🎯</h3>
+          <p>Reinício das atividades com novas metas e desafios.</p>
+          <button data-id="8" href=""><b>Read More ></b></button>
+          <span class="circleLine"></span>
+          <span class="dateLine">Agosto 2025</span>
+        </li>
+
+        <li>
+          <h3 class="titleLine">Ideias Florescendo 🌸</h3>
+          <p>Um mês produtivo com projetos e atividades inovadoras.</p>
+          <button data-id="9" href=""><b>Read More ></b></button>
+          <span class="circleLine"></span>
+          <span class="dateLine">Setembro 2025</span>
+        </li>
+
+        <li>
+          <h3 class="titleLine">Celebrando o Progresso 🎃</h3>
+          <p>Reconhecendo esforços e construindo um futuro promissor.</p>
+          <button data-id="10" href=""><b>Read More ></b></button>
+          <span class="circleLine"></span>
+          <span class="dateLine">Outubro 2025</span>
+        </li>
+
+        <li>
+          <h3 class="titleLine">Quase Lá! 📚</h3>
+          <p>
+            Últimos ajustes e preparativos para encerrar o ano com chave de
+            ouro.
+          </p>
+          <button data-id="11" href=""><b>Read More ></b></button>
+          <span class="circleLine"></span>
+          <span class="dateLine">Novembro 2025</span>
+        </li>
+
+        <li>
+          <h3 class="titleLine">Fechando com Brilhantismo 🎄</h3>
+          <p>Uma retrospectiva do ano e as comemorações finais.</p>
+          <button data-id="12" href=""><b>Read More ></b></button>
+          <span class="circleLine"></span>
+          <span class="dateLine">Dezembro 2025</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- TIMELINE END -->
+
+  <section id="anuario">
+    <div>
+      <h1>Anuário da sala:</h1>
+      <br />
+      <div id="anuarioHeader">
+        <div class="diretoria">
+          <img src="./src/coroa.png" alt="Uma coroa" style="
+                width: 40px;
+                border-radius: 0;
+                margin: 0;
+                box-shadow: none;
+                filter: drop-shadow(4px 4px 1px rgba(0, 0, 0, 1));
+              " />
+          <img src="https://lh3.googleusercontent.com/pw/AP1GczMsFtx1S-zoD5g5NRpZUut6mQ53sPvIPk8iFk-0FODfInkkmkXUucYbnorXJL6GCL7QkBdHhRvkElFLF_h-w_c3ooxILGR9JVV5t3YKJTNgzOK2bwQl5e9pxhR5l7Pxy5tqKbcO28RbIAZiiwNairSx=w461-h632-s-no-gm?authuser=0" alt="Lígia Matos" />
+        </div>
+        <div class="diretoria">
+          <img src="./src/coroa.png" alt="Uma coroa" style="
+                width: 40px;
+                border-radius: 0;
+                margin: 0;
+                box-shadow: none;
+                filter: drop-shadow(4px 4px 1px rgba(0, 0, 0, 1));
+              " />
+          <img src="https://lh3.googleusercontent.com/pw/AP1GczPOXKth0qVGrt_brJfcypw8soW2vvPwGl2fIOKQ3tLzce03ibbXKoTezUQMrYmbXlMKMqmpBCHqdVU7gitZg7RFMTcGqjTBViSJ_K6B6ch3jkHyKUYt4tBcAyZx0KLOGyL8z6_yXIZIWZUK7cr4p5dy=w461-h632-s-no-gm?authuser=0" alt="Sonia Turri" />
+        </div>
+        <div class="diretoria">
+          <img src="./src/coroa.png" alt="Uma coroa" style="
+                width: 40px;
+                border-radius: 0;
+                margin: 0;
+                box-shadow: none;
+                filter: drop-shadow(4px 4px 1px rgba(0, 0, 0, 1));
+              " />
+          <img src="https://lh3.googleusercontent.com/pw/AP1GczPG_CHBPvPpgm7RAoorTKMiOgSpDG07ROEHctxV1pSmH9PTKhsUvQwcpO_IhzDHyfBR2Ss9s8irm-3UsCe3aKVNu1DVmKlkfrS45w0ae1dlTGNreR1_2sXkhrczjrZ9s6qESGdsmjWZxbv4fYx3ORVX=w461-h632-s-no-gm?authuser=0" alt="Marcelo Dias" />
+        </div>
+      </div>
+    </div>
+
+    <div class="imgs">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczNwFR_eBT5X2s-ckiEILU6UuWLXu-A7FkSGvF3U_rf-ZPhNl6FjFmpmQQASmp8kA03nJLQx7gFBEvQeXP1dWQFC2CB8dFMYWyRBU5g5g7TZ9U-KXlgBuOLE8U-q5apE3rmxJTFakMHLNuDxcx057r8f=w691-h913-s-no-gm?authuser=0" alt="Ana Carolina Castro">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczOERy1ZxbcBl7cVpbjK0M2uirTRNr_VRkxze4Z_2bLbVQcuyao42X56JNJOpeqZZ0FkdP4xRKGoiDk72MGxV5nVpwpGoGG7vu8C5B0mzGDMdDHN0-QOy03QeNmMvMyB3LAOTkBI5ySonIMYN0qQgn53=w694-h913-s-no-gm?authuser=0" alt="Ana Caroline Mena" />
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczNhbFSVJnWKCQ5EKYUjlQHi_Dr0F5pQcZEze8JSvuC5Mtx41d6Lw0Ne_gNbDCzkHfqzDQtBPvFST-Zddg8ACjkHbRPElZqw8jOD_z9_WaQJoaFY2MpmwLr3CHEBAJEkmOQ5o3kBDZw9z4Z8QiRJbZX_=w691-h913-s-no-gm?authuser=0" alt="Ana Julia Sanches" />
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczOx3RQxQXjHgoKMCj7mBy4vQ5Mc27V4X8j-6dIAbtu9sg8rMQ8ZHWNaL-vXTxxtT6XQb9gKyPRcDDVD0HmPwXaNf6u_zbZAwsX_E4aNcrI-vcLblBbOvTEPYFSiWYp49ZTJMjeQOdSnbHzxirezLvVd=w694-h913-s-no-gm?authuser=0" alt="Angelina Almeida" />
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczP9GDtmwGCL_1LLmK134DKl2ij4gIqsn8x-h9zqF2AR-JgXAoZ2ByG8qigU0rtKXMQJxnAgFSnPc1E5AWQUZ1pNiprLImYVzSPU-F2mllbcKJi_ELD3KM3bgkfjYBt-SWzpl3kT6MIWtNMFZHRHR_Tw=w480-h632-s-no-gm?authuser=0" alt="Fernanda de Oliveira" />
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczNVNnNLozf9yWbay1rS9Fi_Rbjo2PVvv4YwPJ8fEys_o7HKql_xj9-eqluyj5yKAGFgNE_hIFP71z0zolmdIxgrq5mlkfsdE70ogiuobuH6jIqfBuTTQESoTWVDpvHrnhKNFwXmVv5KrGJbsdx6zZuZ=w481-h632-s-no-gm?authuser=0" alt="Gabriel Luis" /> 
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczPLl_k3CMHGzN54VhX7jyNQ0Ncou_0pd4uUy4qRvXMU3fjQFIAho4Y1CEKUCamJ3_rcp76CbLGFBG_mGNScURtluXCwpfXvkJJKFl-bS6AFwgVrnKeBVe5N26j1Ijkdpl9ycFCJONlJRDhW_VFDYQ7u=w480-h632-s-no-gm?authuser=0" alt="Gustavo Barrinha" />
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczOVM3iFYbHVpj-9xJFFs8CDaM9rJYSnaWmqKcHNfh5ggKwroq3GBcf9d0z5OqFsto4M2KL31kBrkadqrN4yXwiVmpW9JcMS02LJu6yrdgALsoXnWwuXVxYULd6D4I70B7kGA4VkHiVKKlzVcKnPVe6u=w480-h632-s-no-gm?authuser=0" alt="Helena Padilha"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczPBQzK0a9OIV5RTSrg-HkrbiyctBbcIO1gc_oR8K1s4bfX2E7oREOS1yGXXrcmBPL_5hbpc9Of-joyqYZDCDxXTwhg3qfI2_J_Qiz5GEoMe3aXPXHv3rpLdu80qc5U4pmHlISahlvLW9NhnY3MvN-Bl=w695-h913-s-no-gm?authuser=0" alt="Igor Rodrigues"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczOU2JQ4RLcU2F6GudGQWXgxjtLegHx3MiEIv1O6VVa4kJIfRu3zAYJGtGZMnGvsm_vnsi6OhdAxRKsnf-xj1yMWEz9UF3oj7AplnEh8qnozI0D5JGVJj70Cq7NLNU3pYfHdJ6b6soiWD4OiH-NWO8ID=w695-h913-s-no-gm?authuser=0" alt="Isabela Jeronymo"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczPzx3TAhqpj577J_XkwMNzK-oXAx1a17fIHR6YfjgFK2NLGh3v5y8MP4ZmGNBMGbov4j2AsRy6I2lAvwdgDuxR3_TpbjCqUATnm1U47LDwaY8O--LzmmJAm4WcdLNiXjSGTrFSb38xeQ7Mh0KqFAWsB=w691-h913-s-no-gm?authuser=0" alt="Isabela Etore"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczMdTKArdyUgP79Y2iuPoXICmW0yIVDYzkYa9GAobwuZshPSubmsGys1GWAT7QisixnDX7GjOxzBqEE0BA6xDd0H49yVgxYAlrf46YJoXxTqDuTqiOr-8fBu5RqQj9erxBc_c0ddIXGWNmY6aYLF3YWT=w694-h913-s-no-gm?authuser=0" alt="Isabella Carolina"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczOc8reE4FX3fRNYfQiNtswkBuJOUmm_lSaqi_ilrc2IaeiwEtVe206orvPa7iubf3KHjB8J-BR0dSDOsG045hNirK5buWu3SsfRYCrHuKNC8-JXumJHR7Z5QcrAQSZLv8AU70lCEYp9w9Z_my_2nARC=w691-h913-s-no-gm?authuser=0" alt="Isabelly Chirai"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczMJXBw1rb_vaXc1BHl2NQBQRa4SyjgtUCojtgb9x-35pu0LHGsPIJQL8TcZHP-vP-2WNJC2cCo7xXUmbiYdhSp_OQ1Ld6UVy4Liqz3TImB7WNs6njcWgoOhGQUzFLUL7kXXC_BXbK9pJny1XOivBcSE=w691-h913-s-no-gm?authuser=0" alt="Isabely K"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczPJwOjNqJBtAeFV_7e18LOfufjfvfEPzK5RPsLXi_UY3asYCn3W0G8jYYbFZIgd9Fr6meeXQWHp1qM2SLlHsuzRdGNHQhV3cgp_xWU-h4_UUnGIQKWpP4rKAdtRTXO1ppZ0pr4zEQpX1T42ol23X54=w695-h913-s-no-gm?authuser=0" alt="João Alexandre"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczPdjt-Hq7_f7AjUBMcId-X89cExYNp444MHmukSZMErt8mCK4Q7DjyY8t6wnPukbF-mE-7rE0DZjLMxmZiZC3Dmb3JEhycoYl4QOdFh5YMOz4oQDwhIgwTnPGTzE7xp2Ju994SAmEsY2gHCajDLTNA=w691-h913-s-no-gm?authuser=0" alt="João Vittor"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczPo6WPSIO5MbM8f6-YqLWekurUEf37w4vcl7hi4_4Wvp6X9NPA6Q7dbMfTGSFbarxV13aoNOTiTfi64Tz6CWrTmSCvZpsiTv_xsFARr8ilU-00oe3wj-WP_DVgqwcQxXQBXXBBkCIULKOzR80ii9FQ=w693-h913-s-no-gm?authuser=0" alt="Júlia Garcia"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczNawG3T7C9p5RK18eFPyzbPm9P-9la0tZ7-OeFrnM17Fm1ih-jmjZpYbS8gQg8eYeXIcpZj_wXRd7y1u_Ji6kCyZnYhTwvnvGsKV8xH6SY0Kx4BzZ-hR5e87ZTRdGQNzt87Oo0DAJTLYQzVJHIzHCo=w691-h913-s-no-gm?authuser=0" alt="Lauren Norberto"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczMJ3QVVOlggja-brrY46UERphAzDg_WNkFlLSF1K8E_UPtoLcqOKevBlARmbxVlQlGMYZLYr95_VVAnJfSIeDnpYedEKDl8O91kkIZbVfEavnNPrIYZlTnXQs2cgkGEUfEVgLm4bfearwbI-EueFgU=w693-h913-s-no-gm?authuser=0" alt="Luany Santos"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczNLm-RNKc4K3mu7JIBK-SSxCfVlWPMZbIIy-_P6aU3Gmd1K5ZhfZ78QPplQuGtSdC9OdA_CBC-DvhqoObiK5jaI8A_O9wNkLWXwf0WaHWLxj5AmtTapcCnVAd0YwOZHcdz4ITm3dGNkScBnL0uzwQ8=w691-h913-s-no-gm?authuser=0" alt="Lucas Duarte"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczNznByM3cOLOZK5EreFiq3diHn-4UBc-MXXRJvOpgkjDdHVVe9h70phMt3U9E88CRcZM_DoQvOU9JtXsHQoBjrGql_7qDXe3KDRXddPvukUU-uK0jQH9BLJRTcbv1FxqnJvd1tNX26fMaNS_A_qkv0=w694-h913-s-no-gm?authuser=0" alt="Manuela Leme"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczNQBT3pdi6zzg1y2EZdsaDVzpjcIw6IjyyTOyy3veWRX_VnNRj5TbDAU5onaYoPWrWSG0P8To3TXv_KhfL2t_TMWwRY1071L7k3pC0OL3GIG7bRCYcIn1GxXFa6eSA6zQb58ItwerSO8TDKzD55e-U=w691-h913-s-no-gm?authuser=0" alt="Marco Antonio"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczONZBlPlvAPdVKV9DUqSMKl1J4-eR63l_qloAu2BffUYynwIltS3oDLBW_v0CR3Tb3fzybRDFNMyKZSpiGk6bBYPINAzeCNegEQGv0X9DsfN-m84GwBI64CJba4lE0ByrcvNYWhJ741e5HpyZiGT_k=w693-h913-s-no-gm?authuser=0" alt="Maria Eduarda Fernandes"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczPdB_e9IjMUQrKTBcj-uWFsO7UIqdNPiGOwQBXvKO-aAEaaR3fN-IQclYqeisGlwAWvyXOdbhyps8ckAAJVyvI4J4_xL71ryxmoUcvOktPdKWP3ibRVS0OcZA033RjEqfSZsBv8yPsJ8Dy0u1SCLBU=w694-h913-s-no-gm?authuser=0" alt="Matheus Almeida"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczOmb5-5cYyuYgUefhdRZJ8Qk_J7Idrh-JoW6SwCN4KrJUplpL44Vko_qLy53v1RxUb7SzWPGEg794AkONyKywDSZw8hrcP7ej_2HyBysfbJZ4OSm58UCJo0m3Aez2VMnA33AWrhCAsy8OiE45f-NcI=w693-h913-s-no-gm?authuser=0" alt="Murilo Moreno"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczMVvUihfhYqpQl6U1T24KZTGHk-3Td-r8x6J8gMb88t9RPRoteHYhwSFRsXVdTIX2emc1l4PvlG1zfB9759Vp0tZ8aDdTm1Q6Woat5M14s3Tlv1tOPrJE88pA1nztwYGDu1WXB0YP1-rR9E90S-v2I=w693-h913-s-no-gm?authuser=0" alt="Nathalia Almeida"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczOUIlOJoP37-nSF4KlCbE-R0kVBKvWO81hG_ehbOAPgtF-XXvLtI9bbIPvgP8-Rp9VQfjfR5XIfhnBzMGz7C0Qyo4v1y5F0DtWEDWGK2_ygo6IgxwlC-G5DrJkFnmLLPyULXn39xZw6jXZ_RDw7km4=w694-h913-s-no-gm?authuser=0" alt="Nycolle Kauany"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczNcXRGe54Ce9ioJJNhlNLYu2vuylSy0icVM6d3tsbnqZMR3UqIkcTHyAQMyyYapukJ1nOjnn6oonwttTqPv1CsNmeCevyijlHtC4dxgjjzdc4gUwJxRBf-plYpaaPVEwQfjgykYwkC2EdmgP0toamE=w694-h913-s-no-gm?authuser=0" alt="Queren Hapuque"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczN6bzMbcGEeIcIJ3EOIYcjH9EmYQU4g-71K8BHZCw608MUIH4OUBdkIZHGhNPCpbTWmKc-ojRTz6qC_CeVYS992FaMqMd3njOeeX1CYohyK0cm0UnWE1o4B2Owqg-_fVhVGCyJjilsyOzMbRSe87SY=w694-h913-s-no-gm?authuser=0" alt="Thafany Santos"/>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczN_Umql6URhoV1FIlzr-EDbBbm3nlE6Huidf4oUWrfxS1oGv2wPGgrpzIVHgZlWXUWhKugzTPfHRh1wIDeItTzG2aD5LjAt2yTMWtd6gK5_GSnchQkow7iEqLmnZ1-F1kZn4NsBBJfw5GY42GcQG_M=w694-h913-s-no-gm?authuser=0" alt="Victoria de Mattos"/>
+
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section id="location">
+    <h1>Localização</h1>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.698821426303!2d-47.47143612502305!3d-23.507355259609696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58aeaa2555c8d%3A0x9a73912099883b51!2sSesi%20123%20Centro%20Educacional!5e0!3m2!1spt-BR!2sbr!4v1731095249092!5m2!1spt-BR!2sbr"
+      width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <!-- LOCATION END -->
+</body>
+
+<script src="./scripts/links.js" defer></script>
+<script src="./scripts/clock.js" defer></script>
+<script type="module" src="./scripts/player.js" defer></script>
+
+</html>

@@ -1,0 +1,195 @@
+.mainLine {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    font-family: "PopMedium";
+    padding: 50px 0;
+    display: grid;
+    place-items: center;
+}
+
+.mainLine .headingLine {
+    font-size: 27px;
+    font-weight: 500;
+    color: rgb(30, 0, 255);
+    position: relative;
+}
+
+.headingLine::after {
+    position: absolute;
+    content: " ";
+    width: 50%;
+    height: 3px;
+    left: 50%;
+    bottom: -5px;
+    background-image: linear-gradient(to right,
+             #090979, #00d4ff);
+    transform: translateX(-50%);
+}
+
+.containerLine {
+    width: 70%;
+    height: auto;
+    position: relative;
+    margin-top: 80px;
+}
+
+.containerLine::after {
+    position: absolute;
+    content: " ";
+    width: 2px;
+    height: 100%;
+    background-image: linear-gradient(to bottom,
+    rgb(15, 0, 131), #00a8ff);
+}
+
+.containerLine ul {
+    list-style: none;
+}
+
+.containerLine ul li {
+    width: 50%;
+    height: auto;
+    padding: 15px 20px;
+    background-color: white;
+    box-shadow: 1px 1px 25px black;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    z-index: 99;
+    position: relative;
+}
+
+.containerLine ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translate(-30px);
+    text-align: right;
+}
+
+.containerLine ul li:nth-child(odd) .dateLine {
+    right: 20px;
+}
+
+.containerLine ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translate(30px);
+}
+
+.containerLine ul li .titleLine {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(15, 0, 131);
+}
+
+ul li p {
+    font-size: 15px;
+    color: #444;
+    margin: 7px 0;
+    line-height: 23px;
+}
+
+ul li button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 15px;
+    color: #551a8b;
+    font-family: "PopMedium";
+}
+
+ul li .dateLine {
+    position: absolute;
+    top: -40px;
+    width: 135px;
+    height: 35px;
+    border-radius: 20px;
+    color: white;
+    background-image: linear-gradient(to bottom,
+    rgb(20, 0, 167), $primary-color);
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+}
+
+.containerLine ul li .circleLine {
+    width: 30px;
+    height: 30px;
+    background-color: #00a8ff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+}
+
+.containerLine ul li .circleLine::after {
+    content: " ";
+    width: 15px;
+    height: 15px;
+    background-color: rgb(15, 0, 131);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.containerLine ul li:nth-child(odd) .circleLine {
+    right: -30px;
+    transform: translate(50%, -50%);
+}
+
+.containerLine ul li:nth-child(even) .circleLine {
+    left: -30px;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:1224px) {
+    .containerLine{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:993px) {
+    .containerLine{
+        width: 80%;
+    }
+
+    .containerLine ul li{
+        width: 100%;
+        float: none;
+        clear: none;
+        margin-bottom: 80px;
+    }
+
+    .containerLine ul li:nth-child(odd){
+        transform: translateX(0);
+        text-align: right;
+    }
+
+    .containerLine ul li:nth-child(even){
+        transform: translateX(0);
+        text-align: left;
+    }
+
+    .containerLine::after{
+        opacity: 0;
+    }
+
+    .containerLine ul li:nth-child(even) .circleLine{
+    left: 0px;
+    transform: translate(-50%, 50%);
+    }
+
+    .containerLine ul li:nth-child(odd) .circleLine{
+    right: -30px;
+    transform: translate(-50%, 50%);
+    }
+
+    .containerLine ul li:nth-child(even) .dateLine{
+    left: 0px;
+    }
+
+    .containerLine ul li:nth-child(odd) .dateLine{
+        right: 0px;
+        }
+}

@@ -1,0 +1,125 @@
+#anuario {
+    display: flex;
+    flex-direction: column;
+    background-color: $secondary-color;
+    align-items: center;
+    text-align: center;
+
+    .diretoria{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        height: 300px;
+        justify-content: end;
+        transition: transform 0.3s ease;
+    }
+
+    .diretoria:hover {
+        transform: scale(1.1);
+        
+    }
+    
+    .diretoria img {
+        transition: transform 0.3s ease;
+    }
+    
+    
+    .diretoria:hover img {
+        transform: scale(1.1); 
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+    }
+
+
+    #anuarioHeader{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    img {
+        max-width: 150px;
+        margin: 5px 30px 30px 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.9);
+    }
+
+    div {
+        width: 100%;
+        font-family: "mainBoldItalic";
+        color: $primary-color;
+    }
+
+    .imgs {
+        display: flex;
+        width: 90%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .imgs img {
+        max-width: 150px;
+        margin: 30px;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+    }
+
+    .imgs img:hover {
+        transform: scale(1.3);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+    }
+}
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.diretoria img:first-of-type {
+    animation: float 3s ease-in-out infinite;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+
+.diretoria:hover img:first-of-type {
+    transform: scale(1.1) translateY(-15px);
+}
+
+@media (max-width: 470px) {
+    #anuario {
+        img {
+            width: 100px;
+        }
+
+        .imgs img {
+            margin: 15px;
+        }
+
+        .imgs{
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 435px) {
+    #anuario {
+        img {
+            width: 100px;
+        }
+
+        .imgs img {
+            margin: 5px;
+        }
+
+        .imgs{
+            margin: 0;
+        }
+    }
+}

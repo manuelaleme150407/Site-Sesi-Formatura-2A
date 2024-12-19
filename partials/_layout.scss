@@ -1,0 +1,31 @@
+html{
+    width: 100%;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+#bg-home{
+    position: relative;
+}
+
+#location iframe{
+    width: 100%;
+}
+
+#location{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-color;
+    align-items: center;
+
+    h1{
+        color: $white-normal;
+    }
+}
+
+
